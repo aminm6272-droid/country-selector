@@ -11,7 +11,7 @@ export default function Home() {
   // Dynamically set the dialog text
   const dialogText = selectedCountry
     ? 'good Booooy'
-    : 'Choose your country or I will ignore you... mmmm.';
+    : 'Choose your country... mmm.';
 
   return (
     <main className="flex items-center justify-center min-h-screen p-4">
