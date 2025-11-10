@@ -6,7 +6,7 @@ const nextConfig = {
   // Configure the project for static export
   output: 'export',
 
-  // Set the basePath to your repository name for production builds
+  // Set the  to your repository name for production builds
   // This will ensure all assets (CSS, JS, images) are loaded correctly on GitHub Pages
   // When running locally (development), the basePath will be empty.
   basePath: isProd ? '/country-selector' : '',
