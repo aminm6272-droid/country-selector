@@ -1,14 +1,14 @@
+import type { NextConfig } from 'next';
+
 // Determine if the app is running in a production environment
 const isProd = process.env.NODE_ENV === 'production';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   // Configure the project for static export
   output: 'export',
 
-  // Set the  to your repository name for production builds
+  // Set the basePath to your repository name for production builds
   // This will ensure all assets (CSS, JS, images) are loaded correctly on GitHub Pages
-  // When running locally (development), the basePath will be empty.
   basePath: isProd ? '/country-selector' : '',
 
   images: {
@@ -27,4 +27,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
