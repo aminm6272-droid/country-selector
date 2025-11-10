@@ -33,7 +33,7 @@ export default function Home() {
           </div>
           {/* Cat Image */}
           <Image
-            src="/cat-teacher.png"
+            src="/country-selector/cat-teacher.png"
             alt="Cat teacher pointing"
             width={256}
             height={256}
