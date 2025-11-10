@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --no-lint",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:prod": "next build --config next.config.prod.ts"
+    "lint": "eslint"
   },
   "dependencies": {
     "axios": "^1.13.2",

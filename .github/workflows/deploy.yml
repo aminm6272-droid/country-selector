@@ -21,11 +21,9 @@ jobs:
       - name: Install, build, and test
         run: |
           npm install
-          # Use the new production build script
-          npm run build:prod
+          # Use the standard build command
+          npm run build
       
-      # This step is no longer needed with basePath, but can be helpful for debugging
-      # If the build succeeds but images are still broken, this creates a .nojekyll file
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
 
